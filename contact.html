@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Tropiko</title>
+  <title>contact</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -31,50 +31,18 @@
 
 <body>
   <div class="hero_area sub_pages">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" /><span>
-              Tropiko
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <!-- header section strats -->
+        <div id="header"></div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="fruit.html"> Fruits</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Services </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-            <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
-              <a href="">
-                Get A quote
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+        <script>
+            // Cargar el header
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+        <!-- end header section -->
 
   </div>
 
@@ -119,6 +87,18 @@
     </div>
   </section>
   <!-- end contact section -->
+
+
+  <!-- map section -->
+
+
+
+  <!-- end map section -->
+
+
+
+
+  <!-- parte final -->
 
 
   <section class="info_section layout_padding">
@@ -238,7 +218,7 @@
               </a>
             </div>
           </div>
-          <div class="subscribe_container">
+          <!-- <div class="subscribe_container">
             <h5>
               Subscribe Now
             </h5>
@@ -250,7 +230,7 @@
                 </button>
               </form>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -258,14 +238,24 @@
 
 
 
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
+    <!-- end header section -->
+     <!-- footer section -->
+
+
+ 
+     <div id="footer"></div>
+
+     <script>
+         // Cargar el footer
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+     </script>
+  
+    
+    <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
