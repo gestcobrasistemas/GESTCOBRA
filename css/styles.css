@@ -1,0 +1,13 @@
+/* styles.css */
+
+.navbar-nav .nav-link {
+    color: black; /* Color por defecto */
+}
+
+.navbar-nav .nav-link.active {
+    color: tomato; /* Color cuando está activo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: tomato; /* Color al pasar el mouse */
+}
