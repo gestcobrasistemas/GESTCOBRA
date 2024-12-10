@@ -1,285 +1,357 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <!-- Basic -->
+  <!-- Basic Meta -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Tropiko</title>
+  <title>Gestcobra</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
+
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
   <div class="hero_area sub_pages">
-        <!-- header section strats -->
-        <div id="header"></div>
+    <!-- header section starts -->
+    <div id="header"></div>
 
-        <script>
-            // Cargar el header
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        </script>
-        <!-- end header section -->
-
+    <script>
+      // Cargar el header
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    <!-- end header section -->
   </div>
 
   <!-- service section -->
-
-  <section class="service_section layout_padding ">
+  <section class="service_section layout_padding">
     <div class="container">
-      <h2 class="custom_heading">Nuestros Servicios</h2>
-      <p class="custom_heading-text">
-        Somos una empresa que proporciona un Servicio Integrado de asesoría financiera, gestión empresarial, administración de crédito y recuperación de cartera.
-        Contamos con el mejor Software para controlar, administrar, gestionar y supervisar estadísticamente puntos susceptibles de la Cartera Impaga en tiempo real.
+      <h2 class="custom_heading mt-4">Nuestros Servicios</h2>
+      <p class="custom_heading-text mb-4">
+        Somos una empresa que proporciona un Servicio Integrado de asesoría financiera, gestión empresarial,
+        administración de crédito y recuperación de cartera. Contamos con el mejor Software para controlar,
+        administrar, gestionar y supervisar estadísticamente puntos susceptibles de la Cartera Impaga en tiempo real.
       </p>
-      <h2 class="custom_heading">Quienes Confían En Nosotros</h2>
-      <div class=" layout_padding2">
-        <div class="card-deck">
+
+      <h2 class="custom_heading mt-4">Quienes Confían En Nosotros</h2>
+      <div class="row">
+        <!-- Primer fila de tarjetas -->
+        <div class="col-md-4 col-sm-6">
           <div class="card">
-            <center><img class="" src="Cooperativas/Mutualista Pichincha.png" height="100px" width="250px" alt="Card image cap" /></center>
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.mutualistapichincha.com/" target="_blank">
+                <img class="img-fluid" src="Cooperativas/Mutualista Pichincha.png" height="150px" width="250px" alt="Mutualista Pichincha." />
+              </a>
+            </center>
             <div class="card-body">
-              <h5 class="card-title">Mutualista Pichincha</h5>
+              <h5 class="card-title">Mutualista Pichincha.</h5>
             </div>
           </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
           <div class="card">
-            <center><img class="" src="images/5.png"  height="150px" width="180px" alt="Card image cap" /></center>
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.facebook.com/p/Cooperativa-de-Ahorro-y-Cr%C3%A9dito-Armada-Nacional-100076985001133/?locale=uk_UA" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Armada Nacional.png" height="150px" width="250px" alt="Armada Nacional." />
+              </a>
+            </center>
             <div class="card-body">
-              <h5 class="card-title">Call Center de Cobranzas</h5>
-              <p class="card-text">
-                Contamos con un Call Center de Cobranzas altamente capacitado y enfocado en la recuperación eficiente de deudas. Nuestros agentes utilizan técnicas de comunicación profesional para garantizar una gestión de cobranzas que sea respetuosa, amigable y efectiva. 
-              </p>
+              <h5 class="card-title">Armada Nacional.</h5>
             </div>
           </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
           <div class="card">
-            <center><img class="" src="images/Cobro3.png"  height="150px" width="180px" alt="Card image cap" /></center>
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.coopcalcetaltda.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Calceta Ltda.png" height="150px" width="250px" alt="Calceta Ltda." />
+              </a>
+            </center>
             <div class="card-body">
-              <h5 class="card-title">Servicios de Cobranzas y Finanzas</h5>
-              <p class="card-text">
-                Nos especializamos en brindar soluciones integrales de cobranzas y finanzas para ayudar a las empresas a mejorar su flujo de efectivo y optimizar sus estrategias financieras. Contamos con un equipo altamente capacitado que maneja la cobranza de manera ética, respetuosa y efectiva, asegurando que las relaciones comerciales se mantengan intactas mientras se recuperan los pagos pendientes.
-              </p>
+              <h5 class="card-title">Calceta Ltda.</h5>
             </div>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <a href="" class="custom_dark-btn">
+
+      <div class="row">
+        <!-- Segunda fila de tarjetas -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.cnt.com.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/CNT.png" height="150px" width="250px" alt="CNT." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">CNT.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://coopcentro.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Coop Centro.png" height="150px" width="250px" alt="Coop Centro." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Coop Centro.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://coacmagisterio.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Magisterio de Pichinch.png" height="150px" width="170px" alt="Magisterio de Pichincha." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Cooperativa Magisterio de Pichincha.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Tercera fila de tarjetas -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.mutualistaambato.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Mutualista Ambato.png" height="150px" width="250px" alt="Mutualista Ambato." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Mutualista Ambato.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.mutualistaazuay.com/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Mutualista Azuay.png" height="150px" width="250px" alt="Mutualista Azuay." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Mutualista Azuay.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://coopweb.coacpolitecnica.fin.ec/Login.aspx" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Politecnica.png" height="150px" width="250px" alt="Politecnica." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Politécnica.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Cuarta fila de tarjetas -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://sanantonio.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/San Antonio Ltda.png" height="150px" width="250px" alt="San Antonio Ltda." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">San Antonio Ltda.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.asis.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/San Francisco de Asís.png" height="150px" width="250px" alt="San Francisco de Asís." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">San Francisco de Asís.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.coopacs.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Santa Rosa.png" height="150px" width="250px" alt="Cooperativa Santa Rosa." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Cooperativa Santa Rosa.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Quinta fila de tarjetas -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.utpl.edu.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/UTPL.png" height="150px" width="300px" alt="UTPL." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">UTPL.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://www.cacpezamora.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Zamora Chinchipe.png" height="150px" width="210px" alt="Cooperativa Zamora Chinchipe." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Cooperativa Zamora Chinchipe.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://coopcatar.fin.ec/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Catar.png" height="150px" width="230px" alt="Cooperativa Catar." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Cooperativa Catar.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Sexta fila de tarjetas -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://antorcha.fin.ec/wp/antorcha-2/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Amtorcha Ltda.png" height="150px" width="240px" alt="Antorcha Ltda." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Antorcha Ltda.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <center>
+              <!-- Imagen con enlace que se abre en otra pestaña -->
+              <a href="https://coophuaquillas.fin.ec/cooperat/nosotros/" target="_blank">
+                <img class="img-fluid" src="COOPERATIVAS/Huaquillas Ltda.png" height="150px" width="190px" alt="Huaquillas Ltda." />
+              </a>
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">Huaquillas Ltda.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-4">
+        <a href="#" class="custom_dark-btn">
           Read More
         </a>
       </div>
     </div>
   </section>
-
   <!-- end service section -->
 
-
-  <section class="info_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h5>
-            Fruits
-          </h5>
-          <ul>
-            <li>
-              randomised
-            </li>
-            <li>
-              words which
-            </li>
-            <li>
-              don't look even
-            </li>
-            <li>
-              slightly
-            </li>
-            <li>
-              believable. If you
-            </li>
-            <li>
-              are going to use
-            </li>
-            <li>
-              a passage of
-            </li>
-            <li>
-              Lorem Ipsum,
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>
-            Services
-          </h5>
-          <ul>
-            <li>
-              randomised
-            </li>
-            <li>
-              words which
-            </li>
-            <li>
-              don't look even
-            </li>
-            <li>
-              slightly
-            </li>
-            <li>
-              believable. If you
-            </li>
-            <li>
-              are going to use
-            </li>
-            <li>
-              a passage of
-            </li>
-            <li>
-              Lorem Ipsum,
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>
-            List
-          </h5>
-          <ul>
-            <li>
-              randomised
-            </li>
-            <li>
-              words which
-            </li>
-            <li>
-              don't look even
-            </li>
-            <li>
-              slightly
-            </li>
-            <li>
-              believable. If you
-            </li>
-            <li>
-              are going to use
-            </li>
-            <li>
-              a passage of
-            </li>
-            <li>
-              Lorem Ipsum,
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <div class="social_container">
-            <h5>
-              Follow Us
-            </h5>
-            <div class="social-box">
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/instagram.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="subscribe_container">
-            <h5>
-              Subscribe Now
-            </h5>
-            <div class="form_container">
-              <form action="">
-                <input type="email">
-                <button type="submit">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-    <!-- footer section -->
-
-
- 
-    <div id="footer"></div>
-
-    <script>
-        // Cargar el footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-    </script>
- 
-   
-   <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- footer section -->
+  <div id="footer"></div>
 
   <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
+    // Cargar el footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Google Maps JS -->
+  <script>
     function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
+        center: { lat: 40.645037, lng: -73.880224 },
       });
 
       var image = 'images/maps-and-flags.png';
       var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
+        position: { lat: 40.645037, lng: -73.880224 },
         map: map,
         icon: image
       });
     }
   </script>
-  <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-  </script>
-  <!-- end google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
 </body>
 
 </html>
